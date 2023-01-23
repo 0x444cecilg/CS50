@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Subscribe to BCDN Newsletter{% endblock%}
+{% block navbar %}{% endblock %}
+{% block content %}
+<iframe src="https://giphy.com/embed/h4CCmYbhcTjNb9dATg" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+<h1>Subscribe to our newsletter!</h1>
+    <div class="wrapper">
+
+<!--Error statement if fields are not filled-->
+
+{% if error_statement %}
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ error_statement }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+{% endif %}
+        <!--subsription form template-->
+
+    <div class="icon-area"><span><i class="fa fa-users"</span></div>
+     <div class="login-area">
+     <form action="/subscribe" method="POST">
+  <div class="mb-3">
+    <input autocomplete="off" type="text" autofocus class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="First Name" name='first_name' value="{{ first_name }}">
+  </div>
+
+   <div class="mb-3">
+    <input autocomplete="off" type="text" autofocus class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Last Name" name='last_name' value="{{ last_name }}">
+
+  </div>
+
+   <div class="mb-3">
+    <input autocomplete="off" type="email" autofocus class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Email Address" name='email' value="{{ email }}">
+  </div>
+  <br/>
+  <button type="submit" class="btn-area">Submit</button>
+</form>
+
+    </div>
+
+
+
+{% endblock %}
