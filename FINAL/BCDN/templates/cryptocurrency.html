@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Welcome to Crypto{% endblock%}
+{% block navbar %}{% endblock %}
+{% block content %}
+<body>
+
+    <h1>CRYPTO</h1>
+    <br/>
+        <p>
+        Cryptocurrency is a digital payment system using blockchain technology that doesn't rely on banks to verify transactions.
+        It's a peer-to-peer system that can enable anyone anywhere to send and receive payments.
+        Instead of being physical money that is carried around and exchanged in the real world,
+        cryptocurrency payments exist purely as digital entries to an online database that describe specific transactions.
+        </p>
+        <p>
+        When cryptocurrency is transferred, the transactions are recorded in a digital public ledger. You store your cryptocurrency in a digital wallet.
+        Cryptocurrency got its name because it uses encryption to verify transactions.
+        This means advanced coding is involved in storing and transmitting cryptocurrency data between wallets and to public ledgers.
+        The aim of the encryption is to provide security and safety.
+        Some of the more secure options for cryptocurrency wallets include "cold storage" wallets such as:
+        <a href="https://www.ledger.com/">Ledger</a>, <a href="https://trezor.io/">Trezor</a>, or <a href="https://www.ellipal.com/">Ellipal</a>.
+        </p>
+
+    <h5>Nodes</h5>
+        <p>
+        In the world of Cryptocurrency, a node is a computer that connects to a cryptocurrency network. The node supports the relevant cryptocurrency's
+        network through either; relaying transactions, validation or hosting a copy of the blockchain. In terms of relaying transactions each
+        network computer (node) has a copy of the blockchain of the cryptocurrency it supports, when a transaction is made the node creating the
+        transaction broadcasts details of the transaction using encryption to other nodes throughout the node network so that the transaction
+        (and every other transaction) is known.
+        </p>
+
+    <h5>Mining</h5>
+        <p>
+        In cryptocurrency networks, mining is a validation of transactions. For this effort, successful miners obtain new cryptocurrency as a reward.
+        The reward decreases transaction fees by creating a complementary incentive to contribute to the processing power of the network. The rate of
+        generating hashes, which validate any transaction, has been increased by the use of specialized machines such as FPGAs and ASICs running complex
+        hashing algorithms like SHA-256 and scrypt.
+        </p>
+</body>
+
+{% endblock %}
